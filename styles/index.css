@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #131927;
+}
+
+/* NAV BAR CSS START */
+#navbar {
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#navbar_menuOptions {
+    display: flex;
+    align-items: center;
+    padding-left: 52px;
+}
+
+#navbar_menuOptions>span {
+    margin-right: 16px;
+}
+
+#logo {
+    height: 45px;
+    cursor: pointer;
+}
+
+#menu_list {
+    display: flex;
+    list-style: none;
+}
+
+#menu_list>li {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#menu_list>li:hover{
+    text-decoration: underline;
+}
+
+#menu_list>li>img {
+    height: 16px;
+}
+
+#search_bar {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #1f80e0;
+}
+
+#search_bar>.material-symbols-outlined {
+    font-size: 18px;
+}
+
+#search {
+    border: none;
+    width: 200px;
+    height: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: width 0.5s;
+    background-color: #131927;
+}
+
+#search:focus {
+    outline: none;
+    width: 350px;
+}
+
+#navbar>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 52px;
+}
+
+#subscribe {
+    background-color: #1f80e0;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+}
+
+#login {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#search_result {
+    /* border: 1px solid; */
+    width: 367px;
+    height: 80vh;
+    overflow: auto;
+    position: fixed;
+    right: 238px;
+    display: grid;
+    padding: 8px;
+    row-gap: 8px;
+    background-color: #0c111b;
+    border-radius: 5px;
+    display: none;
+}
+
+#search_result::-webkit-scrollbar {
+    width: 0px;
+}
+
+#search_result>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
+    border-radius: 8px;
+    background-color: #192133;
+    cursor: pointer;
+}
+
+#search_result>div>div:nth-child(2) {
+    padding: 5px;
+}
+
+#search_result>div>div>p,
+#search_result>div>div {
+    background-color: #192133;
+    border-radius: 8px;
+}
+
+#search_result>div>div>img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+/* NAV BAR CSS END   */

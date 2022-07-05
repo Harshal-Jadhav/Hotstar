@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Star Home</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <!-- Nav Bar Section Start -->
+    <div id="navbar">
+        <div id="navbar_menuOptions">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+            <div id="logo">
+                <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                    alt="logo">
+            </div>
+            <div>
+                <ul id="menu_list">
+                    <li>TV</li>
+                    <li>Movies</li>
+                    <li>Sports</li>
+                    <li id="trending">Trending</li>
+                    <li>
+                        <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg" alt="kids-logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div id="result_div">
+                <div id="search_bar">
+                    <input type="text" name="search" id="search" placeholder="Search" autocomplete="off"
+                        oninput="debounce(get,500)">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+            </div>
+            <div>
+                <button id="subscribe">
+                    SUBSCRIBE
+                </button>
+            </div>
+            <div id="login">LOGIN</div>
+        </div>
+    </div>
+    <!-- result section start -->
+    <div id="search_result"></div>
+    <!-- result section end -->
+    <!-- Nav Bar Section End -->
+</body>
+
+</html>
+
+<script src="./scripts/index.js"></script>
